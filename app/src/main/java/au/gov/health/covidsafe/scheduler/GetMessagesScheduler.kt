@@ -94,7 +94,7 @@ object GetMessagesScheduler {
                     ?.let {
                         CentralLog.d(TAG, "JobScheduler available")
                         val schedulerInMillis = getRandomMinsInMillis() + FOUR_HOURS_IN_MILLIS
-                        CentralLog.d(TAG, "Next scheduled Jon run in ${(schedulerInMillis / 1000) / 60} mins")
+                        CentralLog.d(TAG, "Next scheduled job run in ${(schedulerInMillis / 1000) / 60} mins")
 
                         it.schedule(
                                 JobInfo.Builder(GET_MESSAGES_JOB_ID,
